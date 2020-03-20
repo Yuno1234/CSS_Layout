@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Layout7 </title>
+        <style>
+            div {
+                outline: 1px solid black;
+            }
+            
+            #container {
+                display: grid;
+                margin: auto;
+                max-width: 800px;
+            }
+            
+            #blue1 {
+                display: grid;
+                background-color: blue;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 70px;
+            }
+            
+            #yellow1 {
+                background-color: yellow;
+                margin: 20px;
+            }
+            
+            #yellow2 {
+                background-color: yellow;
+                margin: 20px;
+                grid-column: 2/4;
+            }
+            
+            #green1 {
+                background-color: lime;
+                height: 400px;
+            }
+            
+            #red1 {
+                display: grid;
+                background-color: red;
+                height: 150px;
+            }
+            
+            #yellow3 {
+                background-color: yellow;
+                margin: 20px;
+            }
+            
+            #red2 {
+                display: grid;
+                background-color: red;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 200px;
+            }
+            
+            .yellow4 {
+                display: grid;
+                background-color: yellow;
+                margin: 20px;
+            }
+            
+        </style>
+</head>
+
+<body>
+    
+</body>
+    <div id="container">
+        <div id="blue1">
+            <div id="yellow1"></div>
+            <div id="yellow2"></div>
+        </div>
+        <div id="green1"></div> 
+        <div id="red1">
+            <div id="yellow3"></div>
+        </div>
+        <div id="red2">
+            <div class="yellow4"></div>
+        </div>
+    </div>
+</html>
